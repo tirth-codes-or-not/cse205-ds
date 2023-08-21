@@ -1,4 +1,3 @@
-Question 344
 class Solution(object):
     def reverseString(self, s):
         end = len(s) - 1
