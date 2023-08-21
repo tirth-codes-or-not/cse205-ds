@@ -1,9 +1,8 @@
-class Solution:
+class Solution(object):
     def isPowerOfTwo(self, n):
-        if n == 1:
-            return True
-        
-        if n == 0 or (n % 2) != 0:
+        if (n==0):
             return False
-        
-        return self.isPowerOfTwo(n // 2)
+        elif (n==1):
+            return True 
+        elif (n%2==0):
+             return self.isPowerOfTwo(n/2)
