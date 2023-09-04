@@ -1,5 +1,5 @@
 class Solution:
-    def combine(self, n: int, k: int) -> List[List[int]]:
+    def combine(self, n: int, k: int):
         def backtrack(start, current_combination):
             if(len(current_combination) == k):
                 result.append(list(current_combination))
